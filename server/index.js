@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/values/all', async (req, res) => {
-  const values = await pgClient.query('SELECT t.* FROM public.values t');
+  const values = await pgClient.query('SELECT * FROM values');
   console.log(values.rows);
   res.send(values.rows);
 });
