@@ -54,7 +54,7 @@ class Fib extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{marginTop: 20 }}>
         <form onSubmit={this.handleSubmit}>
           <label>Enter your index:</label>
           <input
